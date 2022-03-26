@@ -1,4 +1,4 @@
-from src.tools import parse_interval
+from src.parsers import parse_interval
 
 
 def test_valid_format():

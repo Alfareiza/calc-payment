@@ -1,4 +1,4 @@
-from src.tools import calc_fee_day
+from src.calculators import calc_fee_day
 
 
 def test_weekday_same_period():

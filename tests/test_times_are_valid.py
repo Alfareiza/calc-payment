@@ -1,4 +1,4 @@
-from src.tools import times_are_valid
+from src.validators import times_are_valid
 
 
 def test_10_15__20_02_are_valid():

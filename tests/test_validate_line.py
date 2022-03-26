@@ -1,4 +1,4 @@
-from src.tools import validate_line
+from src.validators import validate_line
 
 
 def test_name_and_intervals_filled():
