@@ -2,20 +2,9 @@ import os
 import pathlib
 
 from src.facade import EXPLANATION
-from src.tools import read_data_person, read_file
+from src.tools import main
 
 FOLDER = pathlib.Path(__file__).parent.resolve()
-
-
-def main(path: str):
-    try:
-        lines = read_file(path)
-        print(f'Reading information from the file \"{path}\"')
-        for line in lines:
-            print(read_data_person(line.strip()))
-        print('\n\nThanks by using our software !!')
-    except TypeError:
-        print(f'Verify that the file exists in the folder {FOLDER}\\')
 
 
 def ask():
@@ -29,7 +18,7 @@ def ask():
         elif start.upper() == 'N':
             print('Thanks by using our software')
         else:
-            print('Invalid Information')
+            print('Invalid Information, press S or N')
             ask()
 
 
