@@ -1,4 +1,4 @@
-from src.tools import parse_line
+from src.parsers import parse_line
 
 
 def test_parse_line_name_and_intervals_filled():

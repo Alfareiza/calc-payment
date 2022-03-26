@@ -1,6 +1,6 @@
 import pytest
 
-from src.tools import time_in_range
+from src.validators import time_in_range
 
 
 @pytest.fixture

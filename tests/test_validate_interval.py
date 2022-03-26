@@ -1,4 +1,4 @@
-from src.tools import validate_interval
+from src.validators import validate_interval
 
 
 def test_MO_01_00_14_00_is_valid():
