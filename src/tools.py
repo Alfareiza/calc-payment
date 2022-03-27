@@ -3,8 +3,10 @@ from src.facade import DAYS
 from src.parsers import parse_interval, parse_line
 from src.validators import validate_interval, validate_line
 
+from typing import Tuple, List
 
-def get_fee_day(interval: str) -> tuple[float, str]:
+
+def get_fee_day(interval: str) -> Tuple[float, str]:
     """
     From one string value, calculate the fee to pay for the functionary.
     :param interval: A str that comes splitted from the input.
@@ -42,7 +44,7 @@ def read_data_person(data_person: str) -> str:
     return f"The amount to pay {name} is: {int(mount_person)} USD"
 
 
-def read_file(path: str) -> list[str]:
+def read_file(path: str) -> List[str]:
     """
     Read a txt file that contains lines where every one are
     information of a functionary.
