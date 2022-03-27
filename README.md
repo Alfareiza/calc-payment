@@ -60,13 +60,13 @@ Once the repository has been cloned, is created a folder with the name of the pr
 
 Then to activate the isolated environment execute the next command according to your O.S
 
-|          Windows       |         Linux        |
-|------------------------|:--------------------:|
-| .venv\Scripts\activate |  .venv\bin\activate  |
+|          Windows       |              Linux          |
+|------------------------|:---------------------------:|
+| .venv\Scripts\activate |  source .venv/bin/activate  |
 
 Finally, execute:
 
-`pip install -r requirements`
+`pip install -r requirements.txt`
 
 All the dependencies and sub-dependencies will be installed on the local project.
 
@@ -97,10 +97,28 @@ This program calculate the fee of a employee trough information comes from a txt
             
 Should I start to calculate the information (S/N): s
 Reading information from the file "file.txt"
+
+RENE ↓
+	Payment of : 30.0 on Monday
+	Payment of : 30.0 on Tuesday
+	Payment of : 50.0 on Thursday
+	Payment of : 80.0 on Saturday
+	Payment of : 25.0 on Sunday
 The amount to pay RENE is: 215 USD
+
+ASTRID ↓
+	Payment of : 30.0 on Monday
+	Payment of : 30.0 on Thursday
+	Payment of : 25.0 on Sunday
 The amount to pay ASTRID is: 85 USD
+
+ALFONSO ↓
+	Payment of : 144.75 on Monday
+	Payment of : 132.58 on Wednesday
+	Invalid date/time format -> ""
+	Payment of : 30.83 on Sunday
 The amount to pay ALFONSO is: 308 USD
-The amount to pay FELIPE is: 85 USD
+
 ```
 
 ## How to test it
@@ -110,13 +128,3 @@ Now that you have experienced the result of the calculation, and remembering the
 `pytest .`
 
 Will execute 54 tests.
-
-
-
-
-
-
-
-
-
-
