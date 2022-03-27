@@ -1,10 +1,10 @@
-import re
 from datetime import datetime
+import re
 
 from src.facade import FORMAT_INTERVALS, DAYS, FORMAT_LINES
+from typing import List
 
-
-def times_are_valid(times: list[str]) -> bool:
+def times_are_valid(times: List[str]) -> bool:
     """
     Verify if times are valid (both of them).
     If at least one of them is invalid, will return False.
