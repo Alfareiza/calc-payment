@@ -3,6 +3,7 @@ from datetime import datetime
 from src.facade import DAYS, PERIODS
 from src.validators import time_in_range
 
+from typing import List
 
 def calc_fee_day(day: str, start_time: str, end_time: str) -> float:
     """
@@ -22,7 +23,7 @@ def calc_fee_day(day: str, start_time: str, end_time: str) -> float:
     return fee_day
 
 
-def calc_minutes_in_periods(start_time: str, end_time: str) -> list[int, int, int]:
+def calc_minutes_in_periods(start_time: str, end_time: str) -> List:
     """
     Calculate how many minutes the functionary worked and return a list
      where every index depicts the minutes in that period.
