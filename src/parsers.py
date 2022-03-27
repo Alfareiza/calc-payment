@@ -1,4 +1,7 @@
-def parse_interval(interval: str) -> tuple[str, str, str]:
+from typing import Tuple, List
+
+
+def parse_interval(interval: str) -> Tuple[str, str, str]:
     """
     Split the interval in three elements. They are, start time of the working day,
     end time of the working day, and the abbreviation of the day.
@@ -13,7 +16,7 @@ def parse_interval(interval: str) -> tuple[str, str, str]:
     return day, initial_hour, end_hour
 
 
-def parse_line(fileline: str) -> tuple[list[str], str]:
+def parse_line(fileline: str) -> Tuple[List[str], str]:
     """
     Split the information of a string in order to detect the name and the intervals.
     :param fileline: A string with the information of a functionary.
