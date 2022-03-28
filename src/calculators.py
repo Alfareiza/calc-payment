@@ -17,10 +17,11 @@ def calc_fee_day(day: str, start_time: str, end_time: str) -> float:
     fee_day = 0
     try:
         cost_min = [x / 60 for x in DAYS[day]['cost_hour'].values()]
-        fee_day = round(sum(x * y for x, y in zip(cost_min, total_minutes)), 2)
+        for x, y in zip(cost_min, total_minutes):
+            fee_day += x * y
     except KeyError as k:
         print(f'{k} is not a valid day.')
-    return fee_day
+    return round(fee_day, 2)
 
 
 def calc_minutes_in_periods(start_time: str, end_time: str) -> List:
