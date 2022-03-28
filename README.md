@@ -54,7 +54,13 @@ Execute the next command on your terminal
 
 ### 2. Isolate the environment
 
-Once the repository has been cloned, is created a folder with the name of the project `calc-payment`. Go toward this folder using the terminal and execute:
+Once the repository has been cloned, a folder is created with the name of the project `calc-payment`. 
+
+Go toward this folder using the terminal :
+
+`cd calc-payment`
+
+And execute:
 
 `python -m venv .venv`
 
@@ -72,9 +78,9 @@ All the dependencies and sub-dependencies will be installed on the local project
 
 ## How to execute
 
-Once the environment has been isolated, you can execute the program, yet you need [the txt file](https://github.com/Alfareiza/calc-payment/blob/main/file.txt) with the information for calculating.
+Once the environment has been isolated, you can execute the program, you will need [the txt file](https://github.com/Alfareiza/calc-payment/blob/main/file.txt) with the information for the calculation to work.
 
-With the repository, has been downloaded an example file that you can modify, respecting the pattern of the lines.
+With the repository, has been downloaded a file sample file that you can modify, respecting the pattern of the lines.
 
 So, for the magic to happen, execute the next command:
 
@@ -86,12 +92,12 @@ or
 
 You will see a message informing what the program does and asking you if you want to start to do the calculation.
 
-Once the program has ended up, you can modify the txt file, in order to force the program to demand more from it. 
+Once the program has finished, you can modify the txt file, in order to force the program to demand more from it. 
 
 This is how it looks:
 
 ```
-This program calculate the fee of a employee trough information comes from a txt file according to the next pattern:
+This program calculates the fee of a employee based on information fed by txt file according to the next pattern:
             					"JANE=MO10:00-12:00,WE08:15-17:51,SU20:00-21:00"
             Then, will be printed on the screen the salary of every employee. Be sure that there is a txt file on the folder.
             
@@ -123,7 +129,7 @@ The amount to pay ALFONSO is: 308 USD
 
 ## How to test it
 
-Now that you have experienced the result of the calculation, and remembering the enviroment is isolated, you can test the code executing the next command:
+Now that you have experienced the result of the calculation, and keep in mind the enviroment is isolated, you can test the code executing the next command:
 
 `pytest .`
 
