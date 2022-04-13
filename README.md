@@ -4,7 +4,7 @@
 
 ## Introduction
 
-The company ACME offers their employees the flexibility to work the hours they want. They will pay for the hours worked based on the day of the week and time of day, according to the following table:
+Certain company offers their employees the flexibility to work the hours they want. They will pay for the hours worked based on the day of the week and time of day, according to the following table:
 
 | Monday - Friday      |  Saturday and Sunday |
 |----------------------|:--------------------:|
