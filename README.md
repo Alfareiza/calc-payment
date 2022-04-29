@@ -1,6 +1,14 @@
-![](https://github.com/Alfareiza/calc-payment/actions/workflows/github-actions-conf.yml/badge.svg)
+<h1 align="center" >
+    <img src="https://user-images.githubusercontent.com/63620799/165868020-7021fdfe-4363-4ec5-9bc8-89dfb0a9d56a.gif">
+</h1>
 
-# Calculator of Payments
+
+
+<h2 align="center" >
+    Calculator of Payments<br>
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/Alfareiza/calc-payment?style=social">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/Alfareiza?label=Follow%20me%20%3A%29&style=social">
+</h2>
 
 ## Introduction
 
